@@ -65,7 +65,7 @@ h6{}
 /* Main content settings and styles */
 .main-container{
   display: grid;
-  grid-template-columns: 15px auto auto auto auto auto auto 15px;
+  grid-template-columns: 5% auto auto auto auto auto auto 5%;
   grid-template-rows: auto;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
@@ -73,13 +73,12 @@ h6{}
 }
 
 .exp-head, .edu-head, .skills-head, .edu-1, .edu-2, .edu-3,
- .exp-1, .exp-2, .exp-3, .skill-1, .skill-2, .skill-3{
+ .exp-1, .exp-2, .exp-3, .exp-4, .skill-1, .skill-2, .skill-3{
   grid-column-start: 2;
   grid-column-end: 8;
 }
 
-ul li.scrollTop {
-float: right;}
+
 
 
 
@@ -92,7 +91,8 @@ float: right;}
 /* Responsive settings and styles */
 @media screen and (min-width: 960px){
   .main-container{
-    grid-template-columns: 100px auto auto auto auto auto auto 100px;
+    grid-template-columns: 12.5%  12.5%  12.5%  12.5%  12.5%  12.5%  12.5%  12.5%;
+                                      /* 1--2--3--4--5--6--7--8--9 */
   }
 
   .head-content{
@@ -103,18 +103,26 @@ float: right;}
     flex-direction: row;
   }
 
-  .exp-1{
+  .exp-1, .exp-3{
     grid-column-start: 2;
     grid-column-end: 5;
   }
 
-  .exp-2{
+  .exp-2, .exp-4{
     grid-column-start: 5;
     grid-column-end: 8;
   }
 
 
+  .skill-1{
+    grid-column-start: 2;
+    grid-column-end: 6;
+  }
 
+  .skill-2{
+    grid-column-start: 6;
+    grid-column-end: 8;
+  }
 
 
 
