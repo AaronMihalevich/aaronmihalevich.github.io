@@ -57,6 +57,11 @@ h6{}
   text-decoration: none;
 }
 
+.nav-item a:hover{
+  color: black;
+}
+
+
 /* Main content settings and styles */
 .main-container{
   display: grid;
@@ -67,14 +72,14 @@ h6{}
   padding-top: 20px;
 }
 
-
-
-.exp-head, .exp-1, .exp-2, .exp-3{
+.exp-head, .edu-head, .skills-head, .edu-1, .edu-2, .edu-3,
+ .exp-1, .exp-2, .exp-3, .skill-1, .skill-2, .skill-3{
   grid-column-start: 2;
   grid-column-end: 8;
 }
 
-
+ul li.scrollTop {
+float: right;}
 
 
 
