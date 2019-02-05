@@ -10,9 +10,14 @@ arm.mihalv@gmial.com
   box-sizing: border-box;
 }
 
+
 h1{}
 h2{}
-h3{}
+h3{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
+  text-indent: 25px;
+}
 h4{}
 h5{}
 h6{}
@@ -72,10 +77,26 @@ h6{}
   padding-top: 20px;
 }
 
-.exp-head, .edu-head, .skills-head, .edu-1, .edu-2, .edu-3,
+.exp-head, .edu-head, .skills-head, .edu-1, .edu-2, .edu-3, .edu-4,
  .exp-1, .exp-2, .exp-3, .exp-4, .skill-1, .skill-2, .skill-3{
   grid-column-start: 2;
   grid-column-end: 8;
+}
+
+.edu-head{
+  color: #7b5ba8;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+
+.edu-1, .edu-2, .edu-3, .edu-4{
+  padding: 10px 0px 10px 0px;
+}
+
+.edu-1, .edu-2, .edu-3, .edu-4, h2{
+  color: #7b5ba8;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
 }
 
 
