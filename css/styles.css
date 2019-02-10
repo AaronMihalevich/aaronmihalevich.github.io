@@ -10,17 +10,32 @@ arm.mihalv@gmial.com
   box-sizing: border-box;
 }
 
+.fontbold{
+  font-weight: 700;
+}
+
+.fontlight{
+  font-weight: 100;
+}
+
+.fontindent{
+  text-indent: 25px;
+}
+
+.mainfont{
+  font-family: 'Work Sans', sans-serif;
+}
 
 h1{}
 h2{}
-h3{
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 100;
-  text-indent: 25px;
-}
+h3{}
 h4{}
 h5{}
 h6{}
+
+ul{
+  list-style-type: none;
+}
 
 /* Header settings and styles */
 .head-container{
@@ -77,29 +92,228 @@ h6{}
   padding-top: 20px;
 }
 
-.exp-head, .edu-head, .skills-head, .edu-1, .edu-2, .edu-3, .edu-4,
- .exp-1, .exp-2, .exp-3, .exp-4, .skill-1, .skill-2, .skill-3{
+/* Grid section 100% width */
+/* Grid section 100% width */
+/* Grid section 100% width */
+.edu-section-head, .edu-section, .exp-section-head, .exp-section,
+ .skills-head, .skill-section-1, .skill-section-2, .skill-3{
   grid-column-start: 2;
   grid-column-end: 8;
 }
 
-.edu-head{
+
+/* Education section */
+.edu-section-head{
   color: #7b5ba8;
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 
-.edu-1, .edu-2, .edu-3, .edu-4{
+.edu-section{
   padding: 10px 0px 10px 0px;
 }
 
-.edu-1, .edu-2, .edu-3, .edu-4, h2{
+.edu-section h2{
   color: #7b5ba8;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.edu-section h3{
+  color: #7b5ba8;
+  font-weight: 100;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
+  text-indent: 25px;
+}
+
+/* Experiance section */
+.exp-section-head{
+  color: #5b93a8;
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 
+.exp-section{
+  padding: 10px 0px 10px 0px;
+}
 
+
+.exp-section h2{
+  color: #5b93a8;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  padding: 5px 0px 5px 0px;
+}
+
+.exp-section h2{
+  color: #5b93a8;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  padding: 5px 0px 5px 0px;
+}
+
+.exp-section h3{
+  color: #5b93a8;
+  font-weight: 100;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
+  text-indent: 25px;
+  padding: 5px 0px 5px 0px;
+}
+
+/* Skills section */
+
+/* Skill box grid */
+.skill-box{
+  display:  grid;
+  -ms-grid-template-columns: 12.5%  12.5%  12.5%  12.5%  12.5%  12.5%  12.5%  12.5%;
+  grid-template-columns: 12.5%  12.5%  12.5%  12.5%  12.5%  12.5%  12.5%  12.5%;
+                                    /* 1--2--3--4--5--6--7--8--9 */
+  gird-template-row: auto;
+  align-items: center;
+}
+
+.skill-box h2{
+  -ms-grid-column-start: 1;
+  grid-column-start: 1;
+  -ms-grid-column-end: 9;
+  grid-column-end: 9;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  margin: 20px 0px 10px 0px;
+  padding: 25px 0px 5px 10px;
+  background-color: yellow;
+}
+
+/* Design & Image software skills section settings */
+.skill-bar-ps{
+  width: auto;
+  height: 40px;
+  background-color: #393378;
+  -ms-grid-column-start: 3;
+  grid-column-start: 3;
+  -ms-grid-column-end: 9;
+  grid-column-end: 9;
+}
+
+.skill-bar-lr{
+  width: auto;
+  height: 40px;
+  background-color: #bfdfeb;
+  -ms-grid-column-start: 3;
+  grid-column-start: 3;
+  -ms-grid-column-end: 7;
+  grid-column-end: 7;
+}
+
+.skill-bar-il{
+  width: auto;
+  height: 40px;
+  background-color: #fc9d10;
+  -ms-grid-column-start: 3;
+  grid-column-start: 3;
+  -ms-grid-column-end: 7;
+  grid-column-end: 7;
+}
+
+.skill-bar-id{
+  width: auto;
+  height: 40px;
+  background-color: #e33796;
+  -ms-grid-column-start: 3;
+  grid-column-start: 3;
+  -ms-grid-column-end: 6;
+  grid-column-end: 6;
+}
+
+.skill{
+  -ms-grid-column-start: 1;
+  grid-column-start: 1;
+  -ms-grid-column-end: 3;
+  grid-column-end: 3;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  font-size: 1.2rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
+}
+
+.ps-color {color: #393378;}
+.lr-color {color: #bfdfeb;}
+.il-color{color: #fc9d10;}
+.id-color{color: #e33796;}
+.html-color{}
+.css-color{}
+.ae-color{}
+.pr-color{}
+.pp-color{}
+.sl-color{}
+
+/* Coding knowledge section settings */
+.skill-bar-html{
+  width: auto;
+  height: 40px;
+  background-color: green;
+  -ms-grid-column-start: 3;
+  grid-column-start: 3;
+  -ms-grid-column-end: 7;
+  grid-column-end: 7;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-bar-css{
+  width: auto;
+  height: 40px;
+  background-color: yellow;
+  -ms-grid-column-start: 3;
+  grid-column-start: 3;
+  -ms-grid-column-end: 7;
+  grid-column-end: 7;
+}
+
+/* Video production software */
+.skill-bar-ae{
+  width: auto;
+  height: 40px;
+  background-color: orange;
+  -ms-grid-column-start: 3;
+  grid-column-start: 3;
+  -ms-grid-column-end: 7;
+  grid-column-end: 7;
+}
+
+.skill-bar-pr{
+  width: auto;
+  height: 40px;
+  background-color: purple;
+  -ms-grid-column-start: 3;
+  grid-column-start: 3;
+  -ms-grid-column-end: 6;
+  grid-column-end: 6;
+}
+
+/* other knowledge section */
+.skill-bar-pp{
+  width: auto;
+  height: 40px;
+  background-color: orange;
+  -ms-grid-column-start: 3;
+  grid-column-start: 3;
+  -ms-grid-column-end: 7;
+  grid-column-end: 7;
+}
+
+.skill-bar-sl{
+  width: auto;
+  height: 40px;
+  background-color: purple;
+  -ms-grid-column-start: 3;
+  grid-column-start: 3;
+  -ms-grid-column-end: 6;
+  grid-column-end: 6;
+}
 
 
 
@@ -124,24 +338,21 @@ h6{}
     flex-direction: row;
   }
 
-  .exp-1, .exp-3{
+  .edu-seciton h3{
+    text-indent: 25px;
+  }
+
+  .exp-seciton h3{
+    text-indent: 25px;
+  }
+
+  .skill-section-1{
     grid-column-start: 2;
     grid-column-end: 5;
   }
 
-  .exp-2, .exp-4{
+  .skill-section-2{
     grid-column-start: 5;
-    grid-column-end: 8;
-  }
-
-
-  .skill-1{
-    grid-column-start: 2;
-    grid-column-end: 6;
-  }
-
-  .skill-2{
-    grid-column-start: 6;
     grid-column-end: 8;
   }
 
