@@ -27,6 +27,16 @@ arm.mihalv@gmial.com
   font-family: 'Work Sans', sans-serif;
 }
 
+.center{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.sm-text{
+  font-size: 1rem;
+}
+
 h1{}
 h2{}
 h3{}
