@@ -1,0 +1,418 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* NOTE Main grid container. Sets a 12 column layout for the full website. */
+/* Main grid container. Sets a 12 column layout for the full website. */
+/* Main grid container. Sets a 12 column layout for the full website. */
+/* This goes in the top level <div> container */
+.container{
+  display: grid;
+  grid-template-columns: 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%;
+                        /*1 -- 2 -- 3 -- 4 -- 5 -- 6 -- 7 -- 8 -- 9 -- 10 -- 11 -- 12 -- 13 */
+  grid-template-rows: auto;
+}
+
+/* NOTE If needing grids within grids use the following
+ ***These need to be placed within column container***
+      ***Cannot be placed within site-container*** */
+
+/* large grid for more detail */
+.lrg-container{
+  display: grid;
+  grid-template-columns: 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%;
+                        /*1 -- 2 -- 3 -- 4 -- 5 -- 6 -- 7 -- 8 -- 9 -- 10 -- 11 -- 12 -- 13 */
+  grid-template-rows: auto;
+}
+
+/* medium grid for simple detail */
+.med-container{
+  display:  grid;
+  grid-template-columns: 12.5%  12.5%  12.5%  12.5%  12.5%  12.5%  12.5%  12.5%;
+                              /* 1 -- 2 -- 3 -- 4 -- 5 -- 6 -- 7 -- 8 -- 9 */
+  gird-template-row: auto;
+}
+
+/* small grid for low detail */
+.sm-container{
+  display:  grid;
+  grid-template-columns: 25% 25% 25% 25%;
+                    /* 1 -- 2 -- 3 -- 4 -- 5 */
+  gird-template-row: auto;
+}
+
+
+
+/* NOTE Start column settings. */
+/*1 -- 2 -- 3 -- 4 -- 5 -- 6 -- 7 -- 8 -- 9 -- 10 -- 11 -- 12 -- 13 */
+/* Sets the contents within to the full width of the screen */
+
+/* Main containers used */
+.col--full, .col--1-13{
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+.col--main, .col--2-12{
+  grid-column-start: 2;
+  grid-column-end: 12;
+}
+.col--nar, .col--3-11{
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+
+
+.col--1-12{
+  grid-column-start: 1;
+  grid-column-end: 12;
+}
+.col--1-11{
+  grid-column-start: 1;
+  grid-column-end: 11;
+}
+.col--1-10, .col--75-l{
+  grid-column-start: 1;
+  grid-column-end: 10;
+}
+.col--1-9, .col--60-l{
+  grid-column-start: 1;
+  grid-column-end: 9;
+}
+.col--1-8{
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+.col--1-7, .col--50-l{
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+.col--1-6{
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+.col--1-5, .col--40-l{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.col--1-4, .col--25-l{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.col--1-3, .col--15-l{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.col--1-2{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+
+/* Start 2 */
+.col--2-13{
+  grid-column-start: 2;
+  grid-column-end: 13;
+}
+
+.col--2-11{
+  grid-column-start: 2;
+  grid-column-end: 11;
+}
+.col--2-10{
+  grid-column-start: 2;
+  grid-column-end: 10;
+}
+.col--2-9{
+  grid-column-start: 2;
+  grid-column-end: 9;
+}
+.col--2-8{
+  grid-column-start: 2;
+  grid-column-end: 8;
+}
+.col--2-7{
+  grid-column-start: 2;
+  grid-column-end: 7;
+}
+.col--2-6{
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+.col--2-5{
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.col--2-4{
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.col--2-3{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+
+/* Start 3 */
+.col--3-13{
+  grid-column-start: 3;
+  grid-column-end: 13;
+}
+.col--3-12{
+  grid-column-start: 3;
+  grid-column-end: 12;
+}
+
+.col--3-10{
+  grid-column-start: 3;
+  grid-column-end: 10;
+}
+.col--3-9{
+  grid-column-start: 3;
+  grid-column-end: 9;
+}
+.col--3-8
+{
+  grid-column-start: 3;
+  grid-column-end: 8;
+}
+.col--3-7{
+  grid-column-start: 3;
+  grid-column-end: 7;
+}
+.col--3-6{
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+.col--3-5, .col--15-lc{
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.col--3-4{
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+
+/* Start 4 */
+.col--4-13, .col--75-r{
+  grid-column-start: 4;
+  grid-column-end: 13;
+}
+.col--4-12{
+  grid-column-start: 4;
+  grid-column-end: 12;
+}
+.col--4-11{
+  grid-column-start: 4;
+  grid-column-end: 11;
+}
+.col--4-10{
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+.col--4-9{
+  grid-column-start: 4;
+  grid-column-end: 9;
+}
+.col--4-8{
+  grid-column-start: 4;
+  grid-column-end: 8;
+}
+.col--4-7, .col--25-lc{
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+.col--4-6{
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+.col--4-5{
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+/* Start 5 */
+.col--5-13, .col--60-r{
+  grid-column-start: 5;
+  grid-column-end: 13;
+}
+.col--5-12{
+  grid-column-start: 5;
+  grid-column-end: 12;
+}
+.col--5-11{
+  grid-column-start: 5;
+  grid-column-end: 11;
+}
+.col--5-10{
+  grid-column-start: 5;
+  grid-column-end: 10;
+}
+.col--5-9{
+  grid-column-start: 5;
+  grid-column-end: 9;
+}
+.col--5-8{
+  grid-column-start: 5;
+  grid-column-end: 8;
+}
+.col--5-7, .col--15-cl{
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+.col--5-6{
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+
+/* Start 6 */
+.col--6-13{
+  grid-column-start: 6;
+  grid-column-end: 13;
+}
+.col--6-12{
+  grid-column-start: 6;
+  grid-column-end: 12;
+}
+.col--6-11{
+  grid-column-start: 6;
+  grid-column-end: 11;
+}
+.col--6-10{
+  grid-column-start: 6;
+  grid-column-end: 10;
+}
+.col--6-9{
+  grid-column-start: 6;
+  grid-column-end: 9;
+}
+.col--6-8{
+  grid-column-start: 6;
+  grid-column-end: 8;
+}
+.col--6-7{
+  grid-column-start: 6;
+  grid-column-end: 7;
+}
+
+
+/* Start 7 */
+.col--7-13, .col--50-r{
+  grid-column-start: 7;
+  grid-column-end: 13;
+}
+.col--7-12{
+  grid-column-start: 7;
+  grid-column-end: 12;
+}
+.col--7-11{
+  grid-column-start: 7;
+  grid-column-end: 11;
+}
+.col--7-10, .col--25-rc{
+  grid-column-start: 7;
+  grid-column-end: 10;
+}
+.col--7-9, .col--15-cr{
+  grid-column-start: 7;
+  grid-column-end: 9;
+}
+.col--7-8{
+  grid-column-start: 7;
+  grid-column-end: 8;
+}
+
+
+/* Start 8 */
+.col--8-13{
+  grid-column-start: 8;
+  grid-column-end: 13;
+}
+.col--8-12{
+  grid-column-start: 8;
+  grid-column-end: 12;
+}
+.col--8-11{
+  grid-column-start: 8;
+  grid-column-end: 11;
+}
+.col--8-10{
+  grid-column-start: 8;
+  grid-column-end: 10;
+}
+.col--8-9{
+  grid-column-start: 8;
+  grid-column-end: 9;
+}
+
+
+/* Start 9 */
+.col--9-13, .col--40-r{
+  grid-column-start: 9;
+  grid-column-end: 13;
+}
+.col--9-12{
+  grid-column-start: 9;
+  grid-column-end: 12;
+}
+.col--9-11, .col--15-rc{
+  grid-column-start: 9;
+  grid-column-end: 11;
+}
+.col--9-10{
+  grid-column-start: 9;
+  grid-column-end: 10;
+}
+
+
+/* Start 10 */
+.col--10-13, .col--25-r{
+  grid-column-start: 10;
+  grid-column-end: 13;
+}
+.col--10-12, .col--25-r{
+  grid-column-start: 10;
+  grid-column-end: 12;
+}
+.col--10-11{
+  grid-column-start: 10;
+  grid-column-end: 11;
+}
+
+
+/* Start 11 */
+.col--11-13, .col--15-r{
+  grid-column-start: 11;
+  grid-column-end: 13;
+}
+.col--11-12{
+  grid-column-start: 11;
+  grid-column-end: 12;
+}
+
+
+/* Start 12 */
+.col--12-13{
+  grid-column-start: 12;
+  grid-column-end: 13;
+}
+
+
+
+/* NOTE easily set width of image */
+.img-width-100 img{
+  width: 100%;
+}
+
+.img-width-50 img{
+  width: 50%;
+}
+
+.img-width-25 img{
+  width: 25%;
+}
