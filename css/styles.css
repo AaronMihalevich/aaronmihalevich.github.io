@@ -37,6 +37,7 @@ arm.mihalv@gmial.com
   font-size: 1rem;
 }
 
+
 h1{}
 h2{}
 h3{}
@@ -106,14 +107,20 @@ ul{
 /* Grid section 100% width */
 /* Grid section 100% width */
 /* Grid section 100% width */
-.edu-section-head, .edu-section, .exp-section-head, .exp-section,
+.info, .edu-section-head, .edu-section, .exp-section-head, .exp-section,
  .skills-head, .skill-section-1, .skill-section-2, .skill-3{
   grid-column-start: 2;
   grid-column-end: 8;
 }
 
 
-
+.info{
+  font-size: 1.5rem;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  color: #393378;
+}
 
 /* Experiance section */
 .exp-section-head{
