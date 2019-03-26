@@ -712,6 +712,19 @@ ul{
 }
 
 @media print {
+
+  h1{
+    font-size: 1.2rem;
+  }
+
+  h2{
+    font-size: 1rem;
+  }
+
+  h3{
+    font-size: .8rem;
+  }
+
   .head-content{
     display: none;
   }
@@ -800,5 +813,146 @@ ul{
     color: #000;
   }
 
+  .main-container{
+    grid-template-columns: 12.5%  12.5%  12.5%  12.5%  12.5%  12.5%  12.5%  12.5%;
+                                      /* 1--2--3--4--5--6--7--8--9 */
+  }
+
+  .section-1{
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+
+  .section-2{
+    grid-column-start: 5;
+    grid-column-end: 8;
+  }
+
+  .section-1-head{
+    grid-column-start: 2;
+    grid-column-end: 8;
+  }
+
+/* skills full page section settings and styles */
+/* skills full page section settings and styles */
+/* skills full page section settings and styles */
+
+  .skill-bar-ps{
+    width: auto;
+    height: 20px;
+    border-radius: 10px;
+    -ms-grid-column-start: 3;
+    grid-column-start: 3;
+    -ms-grid-column-end: 9;
+    grid-column-end: 9;
+  }
+
+  .skill-bar-lr{
+    width: auto;
+    height: 20px;
+    border-radius: 10px;
+    -ms-grid-column-start: 3;
+    grid-column-start: 3;
+    -ms-grid-column-end: 7;
+    grid-column-end: 7;
+  }
+
+  .skill-bar-il{
+    width: auto;
+    height: 20px;
+    border-radius: 10px;
+    -ms-grid-column-start: 3;
+    grid-column-start: 3;
+    -ms-grid-column-end: 7;
+    grid-column-end: 7;
+  }
+
+  .skill-bar-id{
+    width: auto;
+    height: 20px;
+    border-radius: 10px;
+    -ms-grid-column-start: 3;
+    grid-column-start: 3;
+    -ms-grid-column-end: 6;
+    grid-column-end: 6;
+  }
+
+  .skill{
+    -ms-grid-column-start: 1;
+    grid-column-start: 1;
+    -ms-grid-column-end: 3;
+    grid-column-end: 3;
+    text-align: center;
+    padding: 20px 0px 20px 5px;
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+  }
+
+
+  /* Coding knowledge section settings */
+  .skill-bar-html{
+    width: auto;
+    height: 20px;
+    border-radius: 10px;
+    -ms-grid-column-start: 3;
+    grid-column-start: 3;
+    -ms-grid-column-end: 7;
+    grid-column-end: 7;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skill-bar-css{
+    width: auto;
+    height: 20px;
+    border-radius: 10px;
+    -ms-grid-column-start: 3;
+    grid-column-start: 3;
+    -ms-grid-column-end: 7;
+    grid-column-end: 7;
+  }
+
+  /* Video production software */
+  .skill-bar-ae{
+    width: auto;
+    height: 20px;
+    border-radius: 10px;
+    -ms-grid-column-start: 3;
+    grid-column-start: 3;
+    -ms-grid-column-end: 7;
+    grid-column-end: 7;
+  }
+
+  .skill-bar-pr{
+    width: auto;
+    height: 20px;
+    border-radius: 10px;
+    -ms-grid-column-start: 3;
+    grid-column-start: 3;
+    -ms-grid-column-end: 6;
+    grid-column-end: 6;
+  }
+
+  /* other knowledge section */
+  .skill-bar-pp{
+    width: auto;
+    height: 20px;
+    border-radius: 10px;
+    -ms-grid-column-start: 3;
+    grid-column-start: 3;
+    -ms-grid-column-end: 7;
+    grid-column-end: 7;
+  }
+
+  .skill-bar-sl{
+    width: auto;
+    height: 20px;
+    border-radius: 10px;
+    -ms-grid-column-start: 3;
+    grid-column-start: 3;
+    -ms-grid-column-end: 6;
+    grid-column-end: 6;
+  }
 
 }
