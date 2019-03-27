@@ -233,6 +233,10 @@ ul{
   color: #5b93a8;
 }
 
+.print-display{
+  visibility: visible;
+}
+
 .section-1{
   padding-top: 5px;
   padding-left: 15px;
