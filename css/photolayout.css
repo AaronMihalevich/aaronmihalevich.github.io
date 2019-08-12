@@ -161,6 +161,31 @@
   font-size: 20px;
 }
 
+
+.return{
+  font-size: 1.5rem;
+  text-align: center;
+  color: #f1f1f1;
+  padding-top: 120px;
+  padding-bottom: 20px;
+  font-family: 'Amatic SC', cursive;
+  text-decoration: none;
+}
+
+.return a:link{
+  text-decoration: none;
+}
+
+.return a:visited{
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.return a:hover{
+  color: #28a9d3;
+}
+
+
 /* Photo display section end */
 /* Photo display section end */
 /* Photo display section end */
