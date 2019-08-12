@@ -1,0 +1,250 @@
+/* font-family: 'Shadows Into Light', cursive;
+
+
+    font-family: 'Abel', sans-serif;
+
+    font-family: 'Blinker', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+ */
+
+*{
+  margin: auto;
+  box-sizing: border-box;
+}
+
+
+.bluesection{
+  /* background-color: #28a9d3; */
+  background-color: green;
+  height: auto;
+}
+
+.bluesection img{
+  vertical-align: bottom;
+}
+
+
+/* Graphic Design section head start */
+/* Graphic Design section head start */
+/* Graphic Design section head start */
+.design-container{
+  background-color: #28a9d3;
+  width: 100%;
+  height: auto;
+  color: red;
+}
+
+.design-row{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  border: 1px solid pink;
+  height: auto;
+}
+
+.design-row-content-1, .design-row-content-2{
+  flex: 100%;
+  padding-top: 30px;
+}
+
+.design-section-head{
+  font-size: 4rem;
+  text-align: center;
+  color: #f1f1f1;
+  padding-bottom: 20px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.design-bar{
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  padding: 20px;
+}
+
+.design-bar button{
+  border: none;
+  color: white;
+  background-color: black;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  font-family: 'Amatic SC', cursive;
+}
+
+/* Graphic design section head end */
+/* Graphic design section head end */
+/* Graphic design section head end */
+
+.divider{
+  align-self: baseline;
+}
+
+/* Photography section head start */
+/* Photography section head start */
+/* Photography section head start */
+
+/* photo section background */
+.photo-section{
+  background-color: black;
+  height: 100%;
+  min-height: 1000px;
+}
+
+.photo-section-head{
+  font-size: 4rem;
+  text-align: center;
+  color: #f1f1f1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.photo-bar{
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  padding: 20px;
+}
+
+.photo-bar button{
+  border: none;
+  color: white;
+  background-color: black;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  font-family: 'Amatic SC', cursive;
+}
+
+
+/* Photography section head end */
+/* Photography section head end */
+/* Photography section head end */
+
+
+/* background color on press */
+.blue{
+  background-color:rgb(40, 169, 211)!important;
+}
+
+/* Photo display section start */
+/* Photo display section start */
+/* Photo display section start */
+
+.photo-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  width: 90%;
+  height: auto;
+}
+
+.photo-content{
+  padding: 5px;
+  text-align: center;
+}
+
+.photo-container img{
+  width: 100%;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.thumbnail-text{
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+}
+
+/* Photo display section end */
+/* Photo display section end */
+/* Photo display section end */
+
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.imgbox-container{
+  width: 100%;
+  height: auto;
+}
+
+.imgcontainer {
+ position: relative;
+ display: none;
+}
+
+.imgcentered{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.textoverlay{
+  position:absolute;
+  top: 20;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/* Expanding image text */
+#imgtext {
+ position: absolute;
+ bottom: 15px;
+ left: 17%;
+ color: white;
+ font-size: 20px;
+ font-family: 'Amatic SC', cursive;
+}
+
+#imginfo{
+  position: absolute;
+  bottom: -15px;
+  color: black;
+  font-size: 30px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+ position: absolute;
+ top: 10px;
+ right: 15px;
+ color: white;
+ font-size: 35px;
+ cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 700px){
+  .photo-container img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    padding: 5px;
+  }
+
+  .design-row-content-1{
+    flex-grow: 2;
+    padding-top: 30px;
+  }
+
+  .design-row-content-2{
+    flex-grow: 1;
+    padding-top: 30px;
+  }
+
+
+  .photo-bar{
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: space-around;
+  }
+
+}

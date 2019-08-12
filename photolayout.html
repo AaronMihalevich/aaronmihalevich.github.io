@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/photolayout.css">
+  <link rel="stylesheet" href="masterfiles/ARM_master.css">
+  <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Blinker|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+
+  <!-- Graphic design section -->
+  <!--
+  <div class="bluesection">
+    <p class="design-section-head">Graphic Design</p>
+    <div class="design-bar">
+      <button class="design-button tablink blue" onclick="openDesigns(event,'Branding')">Branding</button>
+      <button class="design-button tablink" onclick="openDesigns(event,'Websites')">Websites</button>
+      <button class="design-button tablink" onclick="openDesigns(event,'set3')">Websites</button>
+      <button class="design-button tablink" onclick="openDesigns(event,'set4')">Websites</button>
+      <button class="design-button tablink" onclick="openDesigns(event,'set5')">Websites</button>
+    </div>
+
+    <div id="Branding" class="flex-container photos">
+      <h1>Landscape</h1>
+      <img src="img/land/AfterTheStorm_48x32.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+    </div>
+    <div id="Websites" class="flex-container photos" style="display:none;">
+      <h1>Landscape</h1>
+      <img src="img/land/AfterTheStorm_48x32.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+    </div>
+    <div id="set3" class="flex-container photos" style="display:none;">
+      <h1>Landscape</h1>
+      <img src="img/land/AfterTheStorm_48x32.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+    </div>
+    <div id="set4" class="flex-container photos" style="display:none;">
+      <h1>Landscape</h1>
+      <img src="img/land/AfterTheStorm_48x32.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+    </div>
+    <div id="set5" class="flex-container photos" style="display:none;">
+      <h1>Landscape</h1>
+      <img src="img/land/AfterTheStorm_48x32.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+    </div>
+
+
+    <img src="img/divide_big.png" alt="Divider">
+  </div>
+-->
+
+  <!-- <div class="full-width design-container">
+    <div class="col--pad-50-l img-width-100 pad-10">
+      <img src="img/me.jpg" alt="">
+    </div>
+    <div class="col--pad-50-r img-width-100 pad-1">
+      <img src="img/me.jpg" alt="">
+    </div>
+  </div> -->
+
+
+  <div class="photo-section">
+    <img src="img/divide_big.png" class="divider" alt="Divider">
+    <p class="photo-section-head">Photography</p>
+    <!-- button bar -->
+    <div class="photo-bar">
+      <button class="photo-button tablink blue" onclick="openPhotos(event,'Landscape')">Landscape</button>
+      <button class="photo-button tablink" onclick="openPhotos(event,'Macro')">Macro</button>
+      <button class="photo-button tablink" onclick="openPhotos(event,'Product')">Food & Product</button>
+      <button class="photo-button tablink" onclick="openPhotos(event,'Action')">Action</button>
+    </div>
+
+    <!-- image box  -->
+    <div class="imgbox-container">
+
+      <div class="imgcontainer">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+        <!-- Expanded image -->
+        <img id="expandedImg" class="imgcentered">
+
+        <!-- Image text -->
+        <div id="imgtext"></div>
+      </div>
+
+    </div>
+
+    <!-- photography display -->
+    <!-- Landscape section -->
+    <div id="Landscape" class="photo-container photos">
+      <div class="photo-content">
+        <img src="img/land/AfterTheStorm_48x32.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">After The Storm</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/AsItFlowsAtGreer_48x27.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Ozarks Oasis</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/BigBluffOverlook_48x32.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Big Bluff</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/ElevenPointSunset_48x30.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Eleven Point Sunset</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/MiddleOfKings_32x40.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Middle of the Kings</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/LookingOver_30x42.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Over the Edge</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/Middle_Indian_creek_30x42.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Middle Of Indian Creek</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/RiseAndShine_48x30.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Rise and Shine</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/Rockycreek_48x32.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Rocky Falls</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/Upper_Indian_Creek_32x40.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Upper Indian Creek</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/Winter_Morning_48x27.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Winter Morning</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/SOP_Gallery-10.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Desert Valley</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/SOP_Gallery-11.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Slot Canyon Walls</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/SOP_Gallery-15.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Alpine Lake</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/greer.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Greer Spring</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/land/Eye of the Needle - new years - 2019-15.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Eye of the Needle Falls</p>
+      </div>
+    </div>
+
+    <!-- macro section -->
+    <div id="Macro" class="photo-container photos" style="display:none;">
+      <div class="photo-content">
+        <img src="img/macro/blackberry_lilly.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Blackberry Lilly</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/macro/Current River - Jan-2019-2.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Frost</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/macro/Current River - Jan-2019-16.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Campfire #1</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/macro/Current River - Jan-2019-19.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Campfire #2</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/macro/fern.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+
+      </div>
+      <div class="photo-content">
+        <img src="img/macro/foxfire_log.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/macro/foxfire.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/macro/SOP_Gallery-5.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/macro/the_cat.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/macro/spider.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/macro/memosa.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/macro/wet_hosta.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/macro/wet_leaf.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/macro/wildflower.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+    </div>
+
+    <!-- food and product section -->
+    <div id="Product" class="photo-container photos" style="display:none;">
+      <!-- #img -->
+      <div class="photo-content">
+        <img src="img/food/Aefter-may-4.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <!-- #img -->
+      <div class="photo-content">
+        <img src="img/food/Aefter-may-20.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <!-- #img -->
+      <div class="photo-content">
+        <img src="img/food/Aefter-may-22.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <!-- #img -->
+      <div class="photo-content">
+        <img src="img/food/Aefter-may-32.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <!-- #img -->
+      <div class="photo-content">
+        <img src="img/food/Aefter-may-36.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <!-- #img -->
+      <div class="photo-content">
+        <img src="img/food/Aefter-may-54.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <!-- #img -->
+      <div class="photo-content">
+        <img src="img/food/AefterDinner_march31-3.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <!-- #img -->
+      <div class="photo-content">
+        <img src="img/food/AefterDinner_march31-24.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <!-- #img -->
+      <div class="photo-content">
+        <img src="img/food/AefterDinner_march31-35.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <!-- #img -->
+      <div class="photo-content">
+        <img src="img/food/R&D_march4-2.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <!-- #img -->
+      <div class="photo-content">
+        <img src="img/food/sop_drinks-4.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <!-- #img -->
+      <div class="photo-content">
+        <img src="img/food/SOP_Gallery-18.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <!-- #img -->
+      <div class="photo-content">
+        <img src="img/food/SOP_Gallery-19.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <!-- #img -->
+      <div class="photo-content">
+        <img src="img/food/SOP_Gallery-22.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+    </div>
+
+    <!-- action section -->
+    <div id="Action" class="photo-container photos" style="display:none;">
+      <div class="photo-content">
+        <img src="img/action/Eye of the Needle - new years - 2019-10.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/action/Eye of the Needle - new years - 2019-12.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+      <div class="photo-content">
+        <img src="img/action/SOP-Gallery-6.jpg" alt="&#169 Aaron Mihalevich Photography" onclick="myFunction(this);">
+        <p class="thumbnail-text">Here is an image</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function myFunction(imgs) {
+      // Get the expanded image
+      var expandImg = document.getElementById("expandedImg");
+      // Get the image text
+      var imgText = document.getElementById("imgtext");
+      // Use the same src in the expanded image as the image being clicked on from the grid
+      expandImg.src = imgs.src;
+      // Use the value of the alt attribute of the clickable image as text inside the expanded image
+      imgText.innerHTML = imgs.alt;
+      // Show the container element (hidden with CSS)
+      expandImg.parentElement.style.display = "block";
+    }
+
+    function openPhotos(evt, photoStyle) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("photos");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" blue", "");
+      }
+      document.getElementById(photoStyle).style.display = "flex";
+      evt.currentTarget.className += " blue";
+    }
+
+
+    function openDesigns(evt, designStyle) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("design");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" blue", "");
+      }
+      document.getElementById(designStyle).style.display = "block";
+      evt.currentTarget.className += " blue";
+    }
+  </script>
+</body>
+
+</html>
