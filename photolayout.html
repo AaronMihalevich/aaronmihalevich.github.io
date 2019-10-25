@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/photolayout.css">
-  <link rel="stylesheet" href="masterfiles/ARM_master.css">
+  <!-- <link rel="stylesheet" href="masterfiles/ARM_master.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Abel|Blinker|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
@@ -71,7 +71,7 @@
       <button class="photo-button tablink" onclick="openPhotos(event,'Product')">Food & Product</button>
       <button class="photo-button tablink" onclick="openPhotos(event,'Action')">Action</button>
     </div>
-
+    <button onclick="openTest()"></button>
     <!-- image box  -->
     <div class="imgbox-container">
 
@@ -346,20 +346,20 @@
     }
 
 
-    function openDesigns(evt, designStyle) {
-      var i, x, tablinks;
-      x = document.getElementsByClassName("design");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
+    // function openDesigns(evt, designStyle) {
+    //   var i, x, tablinks;
+    //   x = document.getElementsByClassName("design");
+    //   for (i = 0; i < x.length; i++) {
+    //     x[i].style.display = "none";
+    //   }
 
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" blue", "");
-      }
-      document.getElementById(designStyle).style.display = "block";
-      evt.currentTarget.className += " blue";
-    }
+    //   tablinks = document.getElementsByClassName("tablink");
+    //   for (i = 0; i < x.length; i++) {
+    //     tablinks[i].className = tablinks[i].className.replace(" blue", "");
+    //   }
+    //   document.getElementById(designStyle).style.display = "block";
+    //   evt.currentTarget.className += " blue";
+    // }
   </script>
 </body>
 
